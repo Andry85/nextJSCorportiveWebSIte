@@ -1,3 +1,51 @@
- .contact {
-    background-color: brown;
+ .continer {
+  
  }
+
+ .title {
+    font-size: 60px;
+    margin: 0 0 100px 0;
+    text-align: center;
+ }
+
+ .content {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+ }
+
+ .imgContainer {
+    flex: 1;
+    height: 500px;
+    position: relative;
+ }
+
+ .form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+
+.input, .textarea {
+    padding: 20px;
+    background-color: transparent;
+    outline: none;
+    color: #bbb;
+    border: 3px solid #bbb;
+}
+
+.image {
+    object-fit: contain;
+    animation: move 3s infinite ease alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(-10px);
+
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
